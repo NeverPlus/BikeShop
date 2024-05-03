@@ -1,0 +1,7 @@
+from django.apps import AppConfig
+
+
+class BikeConfig(AppConfig):
+    default_auto_field = 'django.db.models.BigAutoField'
+    name = 'apps.bike'
+    verbose_name = '自行车自组商城'
