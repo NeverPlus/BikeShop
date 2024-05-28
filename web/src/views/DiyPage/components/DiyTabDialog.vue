@@ -94,7 +94,8 @@ const selectTpyeItems = (item: any) => {
 const router = useRouter()
 const toItemDetail = (params: any) => {
   const itemId = params.toString()
-  router.push({ name: 'item_detail', query: { itemId: itemId } })
+  const url = router.resolve({ name: 'item_detail', query: { itemId: itemId } })
+  window.open(url.href)
 }
 </script>
 <script lang="ts">
@@ -129,7 +130,11 @@ export default {
         .ItemName {
           display: block;
           padding: 5px 5px;
-          font-size: 25px;
+          width: 140px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          font-size: 20px;
           text-align: left;
         }
         .ItemNum {

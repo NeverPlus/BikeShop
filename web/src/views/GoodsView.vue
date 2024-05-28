@@ -63,6 +63,7 @@
                           type="primary"
                           round
                           :disabled="item.item_status ? false : true"
+                          @click="toItemDetail(item.item_id)"
                           >{{ item.item_status ? '购买' : '售罄' }}</el-button
                         >
                       </div>
@@ -203,7 +204,11 @@ export default {}
             .ItemName {
               display: block;
               padding: 5px 5px;
-              font-size: 25px;
+              width: 140px;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              font-size: 20px;
               text-align: left;
             }
             .ItemType {

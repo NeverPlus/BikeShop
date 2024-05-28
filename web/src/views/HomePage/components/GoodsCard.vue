@@ -90,7 +90,11 @@
       .GoodsName {
         display: block;
         padding: 5px 5px;
-        font-size: 25px;
+        width: 140px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 20px;
         text-align: left;
       }
       .GoodsType {

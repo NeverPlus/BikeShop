@@ -46,10 +46,12 @@
               >
             </div>
           </div>
-          <el-button round type="default" @click="toPage('add_item')"
-            >添加商品</el-button
-          >
         </div>
+        <template #footer>
+          <el-button round type="default" @click="toPage('add_item')">
+            添加商品
+          </el-button>
+        </template>
       </el-card>
     </div>
 

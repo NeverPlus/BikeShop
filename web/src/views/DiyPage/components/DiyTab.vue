@@ -79,7 +79,7 @@
                           <el-text class="GoodsName">{{
                             GoodsProfile.typeItems[index].data.item_name
                           }}</el-text>
-                          <el-text class="GoodsType"
+                          <el-text class="GoodsNum"
                             >数量：{{
                               GoodsProfile.typeItems[index].num
                             }}</el-text
@@ -371,11 +371,15 @@ export default {
             .GoodsName {
               display: block;
               padding: 5px 5px;
-              font-size: 25px;
+              width: 140px;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              font-size: 20px;
               text-align: left;
             }
-            .GoodsType {
-              display: inline-block;
+            .GoodsNum {
+              display: flex;
               padding: 2px 5px;
               font-size: 15px;
               text-align: left;

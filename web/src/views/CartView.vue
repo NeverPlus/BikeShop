@@ -212,6 +212,7 @@ const deleteCart = () => {
     cartdetail_id: parseInt(itemToDelete.value)
   })
     .then((res) => {
+      CartProfile.data = []
       getCartProfile()
       console.log(res)
     })
